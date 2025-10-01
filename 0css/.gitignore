@@ -1,0 +1,6 @@
+# Ignora arquivos de configuração do VS Code
+.vscode/
+
+# Ignora arquivos de orientação e layout
+orientacoes
+guia-layout-responsivo.md
