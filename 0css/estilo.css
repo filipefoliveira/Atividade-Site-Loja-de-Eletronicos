@@ -1,0 +1,435 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech&display=swap');
+
+/* Resetando margens padrão */
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Formatação de textos */
+h1 {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+
+#prevenda h1 {
+    text-shadow: 1px 1px 5px #000000;
+}
+
+aside h2 {
+    font-family: "Orbitron", sans-serif;
+    text-shadow: 1px 1px 5px #000000;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-family: "Share Tech", sans-serif;
+}
+
+#prevenda h3 {
+    text-align: center;
+    color: #ffbb00;
+    text-shadow: 1px 1px 5px #000000;
+    font-size: 2.3rem;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formatação de imagens */
+.logo-topo {
+    width: 177px;
+    height: 177px;
+    max-width: 100%;
+    filter: drop-shadow(1px 5px 5px rgba(0,0,0,0.5));
+}
+
+.ilustrativo-direita, .ilustrativo-esquerda {
+    flex-shrink: 0;
+    max-width: 20%; 
+    height: auto;
+    filter: drop-shadow(1px 5px 5px rgba(0,0,0,0.5));
+}
+
+#banner-inicial {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../0imagens/fundo\ hompage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner-iphone {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../0imagens/fundo\ pagina\ iphone.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner-mac {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../0imagens/fundo-mac.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner-applewatch {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../0imagens/fundo-applewatch.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner-ipad {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../0imagens/fundo-ipad.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner-acessorios {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../0imagens/fundo-acessorios.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Formatação da caixa de promoção */
+.promocao-box {
+    background-color: #ffffff;
+    border: 3px solid #4B0082;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.promocao-se {
+    background-color: transparent;
+    border-radius: 4%;
+    max-width: 90%;
+    height: auto;
+    margin-top: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.desconto-tag {
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: rotate(10deg);
+}
+
+.oferta-texto {
+    font-size: 1.5rem;
+    font-family: "Share Tech", sans-serif;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.preco-original {
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.preco-promocional {
+    color: #4B0082;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Formatação de menus */
+header#cabecalho {
+    background-color: #4B0082;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+    max-width: auto;
+}
+
+.centro-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; 
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 15px;
+}
+
+.linha-superior {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.barra-pesquisa {
+    flex-grow: 1;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    max-width: 657px;
+    padding: 20px 25px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+#conteudo-pagina {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+aside#lateral-esquerda {
+    flex-shrink: 0;
+    flex-basis: 400px;
+    min-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+section#prevenda {
+    flex-grow: 1;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section#cadastro {
+    flex-shrink: 0;
+    flex-basis: 400px;
+    min-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 33px;
+    margin-top: 5px;
+}
+
+#cadastro h3 {
+    text-align: center;
+    color: #4B0082;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.7rem;
+}
+
+#formularios {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 1px 1px 10px #4B0082;
+    border-radius: 8px;
+}
+
+#formularios fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#formularios legend {
+    font-weight: bold;
+    color: #4B0082;
+    padding: 0 10px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+#formularios div {
+    display: flex;
+    flex-direction: column;
+}
+
+#formularios label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4B0082;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+#formularios input, #formularios select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#formularios input:focus, #formularios select:focus {
+    outline: none;
+    border-color: #4B0082;
+    box-shadow: 0px 0px 5px rgba(75, 0, 130, 0.5);
+}
+
+#formularios button {
+    background-color: #4B0082;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#formularios button:hover {
+    background-color: #6a0dad;
+}
+
+footer {
+    background-color: #4B0082;
+    color: #ffffff;
+}
+
+footer p {
+    font-family: "Share Tech", sans-serif;
+    text-align: center;
+}
+
+/* Ajustes da tabela e do formulário */
+embed {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 123%;
+    height: 400px;
+}
+
+table {
+    width: 123%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    background-color: #4B0082;
+    color: #ffffff;
+}
+
+/* Menu de navegação */
+#menu-navegacao ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin-top: -30px;
+}
+
+#menu-navegacao li {
+    background-color: #ffffff;
+    padding: 8px;
+    transition: background-color 1s;
+    border-radius: 10px;
+}
+
+#menu-navegacao a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Efeitos de hover para os botões */
+#menu-navegacao li:hover {
+    background-color: #7e00d8;
+}
+
+li#botao-iphone {
+    background-color: #a200ff;
+}
+
+li#botao-mac {
+    background-color: #a200ff;
+}
+
+li#botao-applewatch {
+    background-color: #a200ff;
+}
+
+li#botao-ipad {
+    background-color: #a200ff;
+}
+
+li#botao-acessorios {
+    background-color: #a200ff;
+}
+
+li#botao-ofertas {
+    background-color: #a200ff;
+}
+
+/* Formatação de vídeos */
+#prevenda iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 506px;
+    min-width: 640px;
+    min-height: 480px;
+    border-radius: 2%;
+    box-shadow: 0px 0px 35px rgba(75, 0, 130, 0.5);
+}

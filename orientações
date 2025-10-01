@@ -1,0 +1,34 @@
+Desenvolver uma página web utilizando HTML5 semântico, praticando a estruturação correta do conteúdo, a inserção de multimídia e a organização de informações com tabelas, formulários e documentos incorporados.
+
+📌 Descrição da Atividade
+
+Você deverá criar um arquivo chamado atividade.html, estruturando a página com as seguintes tags semânticas mínimas obrigatórias:
+
+<header>
+<nav>
+<main>
+<section>
+<article>
+<aside>
+<footer>
+
+
+
+A página deve conter, obrigatoriamente:
+
+Imagem (<img>) representando um banner ou logotipo.
+Vídeo (<video> ou <iframe> do YouTube).
+Tabela (<table>) com pelo menos 3 colunas e 3 linhas.
+Formulário (<form>) com:
+Campo de texto;
+Campo de e-mail;
+Campo de seleção (<select>);
+Botão de envio.
+PDF embutido utilizando <embed> ou <iframe>.
+
+Loja de Eletrônicos 💻
+Banner: imagem de promoção.
+Tabela: lista de produtos (ex.: notebook, celular, TV).
+Formulário: cadastro de cliente.
+PDF: catálogo de produtos.
+Vídeo: propaganda de lançamento.
